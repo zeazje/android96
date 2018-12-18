@@ -30,12 +30,15 @@ body {
 .mframe {
 	display: none;
 	width: 100%;
-	padding: 10px 20px 5px;
+	height: 100%;
+	padding: 0 20px 5px;
 }
 .mframeShow {
 	display: block;
 	width: 100%;
-	padding: 10px 20px 5px;
+	height: 100%;
+	padding: 0 20px 5px;
+	background: #ddd;
 }
 
 #left ul{
@@ -52,7 +55,7 @@ body {
 
 #main {
 	text-align: center;
-	padding-top: 20px;
+	background: url("./bienv.jpg") no-repeat;
 }
 </style>
 <script>
@@ -82,21 +85,28 @@ function show(oId){
 	</div>
 	
 	<div id="main">
+	
 		<div id="index" class="mframe">
+		<br/><br/>
 			<img src="./96.jpg" alt="深入学习" style="margin: 20px auto; text-align: center;"/>
 		</div>
 		
 		<div id="listview" class="mframe">
-			listview
+		<br/><br/>
+			<p>listview一般显示的条目的列数都是一列,如果是列表（单列多行形式）的使用ListView。</p>
+			<img src="./list_pv.png" />
+			<p>ListView,非常基本且常用的控件</p>
 		</div>
 		
 		<div id="gridview" class="mframe">
+		<br/><br/>
 			<p>GridView与ListView的用法基本一致，不同的只是布局。当我们打开手机，应用会以宫格显示，那就是GridView。 </p>
 			<img src="./grid_pv.png" />
 			<p>GridView 可以指定显示的条目的列数。如果是多行多列网状形式的优先使用GridView。</p>
 			
 		</div>
 		<div id="RecyclerView" class="mframe">
+		<br/><br/>
 			RecyclerView
 		</div>
 	</div>
